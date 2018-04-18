@@ -2,15 +2,13 @@ import React from "react";
 // import addItem from "./App";
 
 export default class addForm extends React.Component {
-  constructor(props){
-    super(props)
-  } 
+
   
   onSubmit(event) {
     event.preventDefault();
   
     const value = this.input.value;
-    this.props.addItem(value);
+    this.props.onSubmit(value);
    
   }
 
